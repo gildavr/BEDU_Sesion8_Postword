@@ -11,7 +11,7 @@ La base de datos contiene las siguientes variables:
 
 - nse5f (Nivel socioeconómico del hogar): 1 "Bajo", 2 "Medio bajo", 3 "Medio", 4 "Medio alto", 5 "Alto"
 - area (Zona geográfica): 0 "Zona urbana", 1 "Zona rural"
-- numpeho (Número de persona en el hogar)
+- numpeho (Número de personas en el hogar)
 - refin (Recursos financieros distintos al ingreso laboral): 0 "no", 1 "sí"
 - edadjef (Edad del jefe/a de familia)
 - sexoje (Sexo del jefe/a de familia): 0 "Hombre", 1 "Mujer"
@@ -37,15 +37,15 @@ Se han analizado diferentes modelos para encontrar la mejor opción que nos perm
 
 Se plantea la siguente hipótesis
 
-> H~0~: Las personas con menos nivel socio-económico gastan más en productos no saludables.
+> H0: Las personas con menos nivel socio-económico gastan más en productos no saludables.
 >
-> H~1~: Las personas con mayor nivel socio-económico gastan más en productos no saludables.
+> H1: Las personas con mayor nivel socio-económico gastan más en productos no saludables.
 
 Además nos interesa confirmar que el consumo de productos no saludables genera inseguridad alimenticia. Para ello se plantea la siguiente hipótesis. 
 
-> H~0~: El consumo de productos no saludables lleva a presentar iseguridad alimenticia.
+> H0: El consumo de productos no saludables lleva a presentar iseguridad alimenticia.
 >
-> H~1~: El consumo de productos no saludables no lleva a presentar inseguridad alimentica. 
+> H1: El consumo de productos no saludables no lleva a presentar inseguridad alimentica. 
 
 Existen otras variables que nos gusatría explorar, además del nivel socio-económico, para determinar si éstas influyen en la generación de inseguridad alimenticia. Estas variables son las siguientes:
 
