@@ -101,9 +101,16 @@ IQR(df$ln_als)
 (quantile(df$ln_als, probs = seq(0.01,0.99, by = 0.01)))
 
 # Descripción Gráfica
+
+# Histograma
+hist(df$ln_als, ln_als.mean, ln_als.sd)
+
+# Densidad de probabilidad
 curve(dnorm(x, mean = ln_als.mean, sd = ln_als.sd), from = min(df$ln_als), to = max(df$ln_als)
       ,col = "blue", main = "Densidad de Probabilidad Normal para ln_als"
       ,ylab = "f(gasto)", xlab = "gasto")
+
+
 
 # ¿Cuánto gastan los hogares en productos no saludables?
 
@@ -147,9 +154,16 @@ IQR(df$ln_alns)
 (quantile(df$ln_alns, probs = seq(0.01,0.99, by = 0.01)))
 
 # Descripción Gráfica
+
+# Histograma
+hist(df$ln_alns,ln_alns.mean, ln_alns.sd)
+
+# Densidad de probabilidad
 curve(dnorm(x, mean = ln_alns.mean, sd = ln_alns.sd), from = min(df$ln_alns), to = max(df$ln_alns)
       ,col = "blue", main = "Densidad de Probabilidad Normal para ln_alns"
       ,ylab = "f(gasto)", xlab = "gasto")
+
+
 
 ################################################################################
 # 3. Calcula probabilidades que nos permitan entender el problema en México.
