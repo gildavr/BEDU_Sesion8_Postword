@@ -21,7 +21,7 @@ La base de datos contiene las siguientes variables:
 - IA (Inseguridad alimentaria en el hogar): 0 "No presenta IA", 1 "Presenta IA"
 
 ## Estudio
-En este estudio identificaremos los patrones de gasto de alimentos saludables y no saludables con base en el nivel ecomómoco de los hogares mexicanos. 
+En este estudio identificaremos los patrones de gasto de alimentos saludables y no saludables con base en el nivel económico de los hogares mexicanos. 
 
 Para este estudio se resuelven las siguentes preguntas:
 
@@ -43,7 +43,7 @@ Se plantea la siguente hipótesis
 
 Además nos interesa confirmar que el consumo de productos no saludables genera inseguridad alimenticia. Para ello se plantea la siguiente hipótesis. 
 
-> H0: El consumo de productos no saludables lleva a presentar iseguridad alimenticia.
+> H0: El consumo de productos no saludables lleva a presentar inseguridad alimenticia.
 >
 > H1: El consumo de productos no saludables no lleva a presentar inseguridad alimentica. 
 
