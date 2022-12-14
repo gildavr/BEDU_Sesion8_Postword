@@ -37,7 +37,7 @@ Se han analizado diferentes modelos para encontrar la mejor opción que nos perm
 
 Se plantea la siguente hipótesis
 
-> H0: Las personas con menos nivel socio-económico gastan más en productos no saludables.
+> H0: Las personas con menor nivel socio-económico gastan más en productos no saludables.
 >
 > H1: Las personas con mayor nivel socio-económico gastan más en productos no saludables.
 
