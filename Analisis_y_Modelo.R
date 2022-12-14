@@ -32,20 +32,9 @@ sum(!complete.cases(df))
 # Revisamos los valores nulos por columna
 sapply(df, function(x) sum(is.na(x)))
 
-# De las variables de estudio que nos interesan son las que nos indican el gasto en alimentos saludables y no saludables.
-# Consideramos que las que tengan un valor nulo es indicativo de que no existe gasto en esa categoría.
+# Eliminamos los registros con valores núlos
+df <- na.omit(df)
 
-# Primero vamos a revisar que al menos una de las dos variables tienen valor. Filtramos los registros que tienen al menos un valor.
-install.packages("dplyr")
-library(dplyr)
-
-df <- df %>%
-  filter(ln_als >= 0 | ln_alns >= 0)
-
-# ahora reemplazamos los valores nulos (NA) con 0.0
-df$ln_als[is.na(df$ln_als)] = 0
-df$ln_alns[is.na(df$ln_alns)] = 0
-sapply(df, function(x) sum(is.na(x)))
 
 ################################################################################
 # 1. Planteamiento del problema del caso
@@ -85,7 +74,7 @@ mean(df$ln_als, trim = .25)
 median(df$ln_als)
 
 # Moda
-install.packages("DescTools")
+# install.packages("DescTools")
 library(DescTools)
 Mode(df$ln_als)
 
@@ -103,7 +92,7 @@ IQR(df$ln_als)
 # Descripción Gráfica
 
 # Histograma
-hist(df$ln_als, ln_als.mean, ln_als.sd)
+hist(df$ln_als, include.lowest = FALSE)
 
 # Densidad de probabilidad
 curve(dnorm(x, mean = ln_als.mean, sd = ln_als.sd), from = min(df$ln_als), to = max(df$ln_als)
@@ -156,7 +145,7 @@ IQR(df$ln_alns)
 # Descripción Gráfica
 
 # Histograma
-hist(df$ln_alns,ln_alns.mean, ln_alns.sd)
+hist(df$ln_alns, include.lowest = FALSE)
 
 # Densidad de probabilidad
 curve(dnorm(x, mean = ln_alns.mean, sd = ln_alns.sd), from = min(df$ln_alns), to = max(df$ln_alns)
