@@ -40,7 +40,7 @@ df <- na.omit(df)
 # 1. Planteamiento del problema del caso
 ################################################################################
 
-# ¿Qué determinantes socio-económicos que producen inseguridad alimenticia?
+# ¿Qué determinantes socio-económicos producen inseguridad alimenticia?
 
 ################################################################################
 # 2-. Análisis descriptivo de la información.
