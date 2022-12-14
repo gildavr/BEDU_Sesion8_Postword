@@ -1,5 +1,5 @@
 # Estudio de inseguridad alimenticia en México
-Ulizando datos de la Encuesta Nacional de Salud y Nutrición (2012) levantada por el Instituto Nacional de Salud Pública en México. 
+Utilizando datos de la Encuesta Nacional de Salud y Nutrición (2012) levantada por el Instituto Nacional de Salud Pública en México. 
 
 ## Desarrollo
 
